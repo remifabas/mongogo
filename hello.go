@@ -4,6 +4,8 @@ import (
 	"context"
 	"fmt"
 	"log"
+
+	"go.remifabas/mongogo/lib_mongo"
 )
 
 // You will be using this Trainer type later in the program
@@ -15,7 +17,7 @@ type Trainer struct {
 
 func main() {
 	// Set client options
-	client := getMongoClient("mongodb://localhost:27017")
+	client := lib_mongo.GetMongoClient("mongodb://localhost:27017")
 
 	collection := client.Database("test").Collection("trainers")
 
