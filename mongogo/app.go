@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	mongo_client "go.remifabas/mongogo/gateways/mongo"
+	mongo_client "github.com/remifabas/mongogo/gateways/mongo"
 )
 
 // You will be using this Trainer type later in the program

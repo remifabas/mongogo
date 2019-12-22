@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"log"
 
+	trainer "github.com/remifabas/mongogo/entity/trainer"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	trainer "go.remifabas/mongogo/entity/trainer"
 )
 
 func GetMongoClient(url string) *mongo.Client {
